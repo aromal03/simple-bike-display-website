@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Bike Site</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container" id="bike">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <a href="https://www.zigwheels.com/newbikes/Honda/cbr650r/specifications" class="btn">Features</a>
+            </nav>
+        <div class="content">
+            <h2>HONDA</h2>
+            <h1>CBR 650R</h1>
+            <br><br><br>
+            <h3><u>Choose Color</u></h3>
+            <div class="color-select">
+                <div id="red"></div>
+                <div id="black"></div>
+            </div>
+        </div>
+        </div>
+        <script>
+            let redBtn=document.getElementById("red");
+            let blackBtn=document.getElementById("black");
+            let bike =document.getElementById("bike")
+            redBtn.onclick=function(){
+                bike.style.backgroundImage="url(images/red.png)";
+            }
+            blackBtn.onclick=function(){
+                bike.style.backgroundImage="url(images/black.png)";
+            }
+        </script>
+    </body>
+</html>

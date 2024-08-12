@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/red.png);
+    background-size: cover;
+    background-position: center;
+    background-color: antiquewhite;
+    padding: 20px 10px;
+    transition: background-image 0.3s;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+
+}
+nav .logo {
+    width: 300px; /* Adjusted logo width */
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Adjusted top position */
+    left: 20px; /* Adjusted left position */
+    z-index: 100; /* Ensures logo is on top of other content */
+}
+
+nav .btn {
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    padding: 20px 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.content{
+    margin-top: 10%;
+    text-align: center;
+    color: #fff;
+}
+.content h2{
+    color: red;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.content h1{
+    font-size: 80px;
+    color:whitesmoke;
+    margin-top: -10px;
+}
+.content h3{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 40px;
+}
+.color-select div{
+    background: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin:0 10px;
+    cursor: pointer;
+}
+.color-select{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.color-select #red{
+    background: red;
+}
+.color-select #black{
+    background: black;
+}
